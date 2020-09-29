@@ -13,5 +13,5 @@
 
 Additional content:
 
-[Clustering lecture](06_Additional/01_Clustering.ipynb)
-
+- [Clustering lecture](06_Additional/01_Clustering.ipynb)
+- [PCA Introduction](06_Additional/02_PCA_intro.ipynb)
