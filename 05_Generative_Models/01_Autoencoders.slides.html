@@ -13795,7 +13795,7 @@ Epoch 10/10
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For computational reasons, the actual formula for <code>z</code> is the following:</p>
 $$
-\large z = \mu +  e^{\sigma} \epsilon
+\large z = \mu +  \sigma \times \epsilon
 $$<p>Where $\epsilon$ is a random value following a normal distribution (centered on 0 with a standard deviation of 1).</p>
 
 </div>
@@ -13804,7 +13804,11 @@ $$<p>Where $\epsilon$ is a random value following a normal distribution (centere
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's try to implement that using TensorFlow.</p>
+<p>For easier later code, it can be rewritten as:
+$$
+\large z = z\_mean +  e^{z\_log\_var/2} \times \epsilon
+$$
+Let's try to implement that using TensorFlow.</p>
 
 </div>
 </div>
